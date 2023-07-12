@@ -1,0 +1,817 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    overflow-x: hidden;
+    width: 100%;
+}
+.header{
+    background-image: url(/Images/professional-photo-background-tdcydqs5himjszmx.jpg);
+    background-size: cover;
+    background-position: fixed;
+    height: auto;
+    padding-top: 15px;
+    padding-bottom: 10px;   
+}
+.logo img{
+    width: 12%;
+    height: 70px;
+    margin-bottom: -30px;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* ================================ nav part ====================== */
+nav{
+    position: fixed;
+    width: 100%;
+    background-image: url(/Images/professional-photo-background-tdcydqs5himjszmx.jpg);
+    z-index: +1;
+}
+
+.nav{
+    display: inline;
+    text-align: center;
+    padding-left: 10%;
+    align-content: space-around;
+    /* justify-content: space-around; */
+}
+.input-1{
+    visibility: hidden;
+}
+@media(max-width:800px){
+    .nav{
+        display: none; 
+    }
+    .lable-1{
+        display: block;
+    }
+    .input-1 {
+        display: block;
+    }
+    #toggle:checked~.nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.nav-item{
+    display: inline-block;
+    position: relative;
+    padding-right: 50px;
+    display:inline-flex ;
+    padding-left: 20px; 
+}
+.nav-item a:hover{
+    color: crimson;
+}
+.nav-link{
+    text-decoration: none;   
+}
+
+.nav a{
+    text-decoration: none;
+    font-size: 30px;
+    color: navy;
+}
+.nav-item button a{
+    text-decoration: none;
+}
+.nav-item .Button_1{
+    border-style: none;
+    border: 3px solid black;
+    background-color: navy;
+    font-size: 30px;
+    color: white;
+    display: inline;
+    padding: 10px 30px;
+}
+.Button_1:hover{
+    background-color: white;
+    color: navy;
+}
+nav hr{
+    margin-top: 20px;
+}
+
+/* ================================== mi part ======================== */
+.mi{
+    display: flex;
+    /* flex-wrap: wrap; */
+    margin-left: 5%;
+}
+
+.main{
+    width: 50%;
+}
+/* disanded selector example shown below */
+.main h3{
+    color: navy;
+    font-size: 35px;
+    margin-top: 100px;
+    padding: 0px 30px 0px 50px;
+}
+.main h1{
+    color: navy;
+    font-size: 50px;
+    margin-top: 40px;
+    padding: 0px 30px 0px 50px;
+}
+.main p{
+    color: navy;
+    font-size: 30px;
+    margin-top: 40px;
+    padding: 0px 30px 0px 50px;         /* inside padding contant is  top right bottom left */
+}
+.main button{
+    color: navy;
+    font-size: 35px;
+    margin: 40px 0px 0px 40px;
+    margin-right: 10px;
+    padding: 0px 30px 0px;
+    border: 3px solid;
+}
+.main button:hover{
+    background-color: navy;
+    color: white;
+}
+.main a{
+    font-size: 25px;
+    padding: 0px 30px 0px 50px;
+}
+.main a:hover{
+    text-decoration: none;
+}
+.main q{
+    display: block;
+    color: navy;
+    font-size: 35px;
+    margin-top: 20px;
+    padding: 200px 0px 0px 50px;
+}
+.image{
+    background-image: url(/Images/bg1.jpg);
+}
+.image img{
+    width: 35%;
+    height: 710px;
+    margin-top: 50px;
+    margin-left: 170px;
+    position: absolute;
+}
+
+.social-logo{
+    position: relative;
+    display: flex;
+    margin-top: 700px;
+    margin-left: 400px;
+    height: 50px;
+}
+.social-logo .sl{
+    margin-right: 30px;
+    margin-top: 2px;
+    padding: 15px;
+    list-style: none;
+    border-radius: 50%;
+    background-color: white;
+}
+.social-logo .sl:hover{
+    background-color: aquamarine;
+}
+
+/* ============================== main head ============================= */
+main{
+    width: 100%;
+}
+.head{
+    background-color: #24315e;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    
+}
+.head hr{
+    margin-top: 20px;
+    width: 10%;
+    height: 0.5px;
+    background-color: white;
+}
+
+.head h1{
+    margin-left: 15px;
+    margin-right: 15px;
+    display: flex;
+    color: white;
+}
+
+/* =========================== head images ========================= */
+.head_images{
+    background-color: #24315e;
+    display: flex;
+    width: 100%;
+}
+.head_images ul{
+    padding-bottom: 50px;
+    margin-left: 10% ;
+    width: 400%;
+    /* overflow: hidden; */
+    display: flex;
+}
+.head_images li img{
+    width: 100%;
+    height: 100px;
+    float: left;
+    position: relative;
+
+    animation: ul_slide 10s infinite reverse;
+}
+@keyframes ul_slide{
+    0%{right: 0;}
+    10%{right: 1000px;}
+    20%{right: 2000px;}
+    30%{right: 3000px;}
+    40%{right: 4000px;}
+}
+.head_images li{
+    display: inline;
+    margin-left: 50px;
+}
+
+/* ================================level-1  part-1-image ==================== */
+
+.level-1{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+.level-1 hr{
+    margin-top: 60px; 
+}
+
+.level-1 .part-1{
+    margin: 60px;
+    padding: 30px;
+    box-shadow: 0 0 20px 0.5px ;
+    width: 300px;
+}
+.part-1:hover{
+    box-shadow: 10px 5px 15px 0;
+}
+.level-1 .part-1 h2{
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.level-1 .part-1 h2 img{
+    width: 60px;
+    height: 50px;
+    margin-right: 10px;
+}
+.level-1 .part-1 p{
+    font-size: 20px;
+}
+
+/* =============================level-2 part_1 ======================= */
+
+.level-2{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.level-2 .part_1{
+    
+    width: 30%;
+    height: 50vh;
+}
+.level-2 .part_1 .heading-1{
+    display: flex;
+    margin-top: 20px;
+}
+.level-2 .part_1 .heading-1 hr{
+    margin-top: 8px;
+    margin-left: 20px;
+    margin-right: 10px;
+    width: 10%;
+    height: 2px;
+    background-color: rgb(254, 28, 16);
+}
+.level-2 .part_1 .heading-1 h4{
+    display: flex;
+    color: rgb(254, 28, 16);
+}
+
+.level-2 .part_1 h1{
+    margin-left: 20px;
+    font-size: 55px;
+}
+.level-2 .part_1 p{
+    font-size: 20px;
+    margin-top: 50px;
+    margin-left: 20px;
+    word-spacing: 9px;
+}
+/* -------------------------level-2 image part --------------------- */
+.level-2 .part_1-image {
+    display: inline;
+    margin-left: 50px;
+    border: 3px solid;
+    background-image: url(/Images/skillbg.jpg);
+}
+.level-2 .part_1-image .cont{
+    position: relative;
+    padding: 60px 85px 75px 80px;
+    line-height: 80px;
+}
+.level-2 .part_1-image .cont .cont-1 h2{
+    display: inline;
+    padding: 10px 25px;
+    background-color: white;
+    border: 3px solid;
+    margin-left: 20px;
+}
+
+/* =========================level-3========================== */
+.level-3{
+    width: 50%;
+    display: flex;
+    padding: 90px;
+    margin-left: 300px;
+}
+.level-3 h2{
+    font-size: 70px;
+    margin: 10px 0 0 30px;
+    text-decoration: underline;
+}
+.level-3 h3{
+    font-size: 25px;
+    word-spacing: 40px;
+    margin: 25px 0 0 35px;
+    opacity: 0.7;
+}
+
+/* =========================level-4 image========================== */
+
+.level-4 {
+    background-image: url(/Images/background.jpg);
+    background-size: cover;
+    height: auto;
+    display: flex;
+}
+
+.level-4 .level-4-image {
+    margin-left: 2%;
+    /* margin-top: 5%; */
+}
+
+.level-4-image .l4i img{
+    margin-top: 80px;
+    position:absolute;
+}
+
+.level-4-image .lable {
+    position: relative;
+    border: 2px solid;
+    margin: 540px 0 0 -40px;
+    padding: 5px 40px;
+    width: 50%;
+    background-color: rgba(255, 255, 255, 0.9);
+    display: flex;
+}
+.level-4-image .lable h2{
+    color: rgb(254, 28, 16);
+    font-size: 50px;
+}
+.level-4-image .lable h3{
+    margin: 10px 10px;
+    opacity: 0.6;
+    font-size: 25px;
+}
+/* =========================level-4 right side========================== */
+.right-side{
+    width: 48%;
+    height: 900px;
+    margin-left: 160px;
+    margin-top: 170px;
+}
+.right-side .heading-1{
+    display: flex;
+    margin: 50px 30px;
+}
+.right-side .heading-1 h4{
+    font-size: 25px;
+    color: aqua;
+}
+.right-side .heading-1 hr{
+    margin: 12px 5px 10px 20px ;
+    width: 10%;
+    height: 2px;
+    background-color: rgb(254, 28, 16);
+}
+.right-side h1{
+    margin: 25px 45px;
+    font-size: 60px;
+    color: aquamarine;
+}
+.right-side p{
+    margin: 25px 45px;
+    font-size: 18px;
+    color: white;
+}
+.right-side a{
+    margin-left: 50px;
+    font-size: 25px;
+    border: 3px solid;
+    padding: 10px 30px;
+    background-color: #24315e;
+    color: white;
+    text-decoration: none;
+}
+.right-side a:hover{
+    background-color: white;
+    color: navy;
+}
+
+
+/* ==================================== level-5 ========================= */
+/* ---------------------------- a-part --------------------------------- */
+
+.level-5{
+    margin: 50px 0 50px 0;
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+}
+.slider{
+    width: 500%;
+    height: 450px;
+    float: left;
+    position: relative;
+    animation: one 15s infinite reverse ;
+}
+@keyframes one{
+    0%{right: 0;}
+    10%{right: 0;}
+    20%{right: 1512px;}
+    30%{right: 1512px;}
+    40%{right: 3024px;}
+    50%{right: 3024px;}
+    60%{right: 1512px;}
+    70%{right: 0;}
+}
+.one {
+    display: flex;
+    margin: 50px 170px;
+    float: left;
+    justify-content: center;
+}
+
+.b-part{
+    display: inline;
+    margin-left: 80px;
+    width: 700px;
+    padding: 30px;
+}
+.b-part h3{
+    margin-bottom: 5px;
+    font-size: 30px;
+}
+.b-part q{
+    word-spacing: 8px;
+}
+
+/* ==================================level-6 =========================== */
+    /* -----------------------------------line-1 ------------------- */
+    
+.level-6{
+    width: 100%;
+}
+
+.line-1 {
+    display: flex;
+    justify-content: space-between;
+}
+.level-6 .line-1 .box img{
+    width: 90%;
+    height: 500px;
+    margin-left: 20px;
+    border: 2px solid;
+    overflow: clip;
+    position: relative;
+    overflow: hidden;
+}
+.line-1 .box img:hover{
+    width: 100%;
+    height: 500px;
+    
+}
+.line-1 .box h1{
+    color: white;
+    visibility: hidden;
+}
+.level-6 .line-1 .box img:hover~h1{
+    font-size: 40px;
+    width: 60%;
+    padding: 10px;
+    position: relative;
+    visibility: visible;
+    bottom: 100px;
+    left: 95px;
+    color: #24315e;
+    background-color: rgba(100, 148, 237, 0);
+}
+
+
+    /* -----------------------------------line-2 ------------------- */
+
+.line-2{
+    display: flex;
+    justify-content: space-around;
+    margin-top: -50px;
+}
+.line-2 .box2 img{
+    width: 90%;
+    height: 400px;
+    border: 3px solid;
+    overflow: hidden;
+}
+.box2 img:hover{
+    z-index: +1;
+    width: 100%;
+    height: auto;
+}
+.box2 h1{
+    color: white;
+    visibility: hidden;
+}
+.box2 img:hover~h1{
+    font-size: 40px;
+    width: 30%;
+    padding: 10px;
+    visibility: visible;
+    position: relative;
+    bottom: 110px;
+    left: 50px;
+    z-index: +1;
+    overflow: hidden;
+    background-color: rgba(100, 148, 237, 0);
+}
+
+
+/* ==================================level-7 =========================== */
+
+.level-7{
+    text-align: center;
+}
+    /* ----------------------- top ----------------------- */
+h1{
+    font-size: 50px;
+    color: #24315e;
+    margin-bottom: 30px;
+}
+.top {
+    margin-top: 170px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+}
+.level-7 h5{
+    color: red;
+}
+.level-7 hr{
+    width: 10%;
+    height: 1px;
+    margin: 7px 10px 0 10px;
+    background-color: red;
+}
+
+
+    /* -------------------- bottom ------------------------------- */
+.bottom{
+    margin-left: 20%;
+}
+.bottom p{
+    display: none;
+}
+
+.bottom .h1-1{
+    font-size: 30px;
+    background-color: #24315e;
+    color: white;
+    width: 70%;
+    text-align: left;
+    padding: 30px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+.bottom .h1-1:hover~.h1-1{
+    font-size: 20px;
+    word-spacing: 10px;
+    display: block;
+}
+
+.bottom .h1-2{
+    font-size: 30px;
+    background-color: #24315e;
+    color: white;
+    width: 70%;
+    text-align: left;
+    padding: 30px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+.bottom .h1-2:hover~.h1-2{
+    font-size: 20px;
+    word-spacing: 10px;
+    display: block;
+}
+
+.bottom .h1-3{
+    font-size: 30px;
+    background-color: #24315e;
+    color: white;
+    width: 70%;
+    text-align: left;
+    padding: 30px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+.bottom .h1-3:hover~.h1-3{
+    font-size: 20px;
+    word-spacing: 10px;
+    display: block;
+}
+
+.bottom .h1-4{
+    font-size: 30px;
+    background-color: #24315e;
+    color: white;
+    width: 70%;
+    text-align: left;
+    padding: 30px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+.bottom .h1-4:hover~.h1-4{
+    font-size: 20px;
+    word-spacing: 10px;
+    display: block;
+}
+
+.bottom .h1-5{
+    font-size: 30px;
+    background-color: #24315e;
+    color: white;
+    width: 70%;
+    text-align: left;
+    padding: 30px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+.bottom .h1-5:hover~.h1-5{
+    font-size: 20px;
+    word-spacing: 10px;
+    display: block;
+}
+
+
+
+/* ===================================== level-8 ========================== */
+.level-8 .text-2 {
+    margin-top: 100px;
+    padding: 100px;
+    background-image:-webkit-linear-gradient(rgb(196, 26, 26),pink,rgb(39, 39, 165));
+}
+
+.level-8 .text-2 h1{
+    margin-bottom: 5px;
+    text-align: center;
+    color: black;
+}
+
+.level-8 .text-2 button{
+    margin: 50px 0 0 40%;
+    font-size: 30px;
+    
+}
+.level-8 .text-2 button a{
+    text-decoration: none;
+    color: red;
+    padding: 50px 55px;
+}
+.level-8 .text-2 button:hover{
+    background-color:#24315e;
+}
+
+/* ===================================== level-9 ========================== */
+.level-9{
+    width: 100%;
+}
+.blog{
+    margin: 90px 0 0 190px;
+}
+.top-1{
+    display: flex;
+}
+.top-1 hr{
+    width: 10%;
+    height: 1px;
+    margin: 7px 10px 0 10px;
+    background-color: red;
+}
+.news{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.news .box-1{
+    width: 20%;
+    height: auto;
+    margin-left: 50px;
+    padding: 70px;
+}
+.box-1 img{
+    width: 300px;
+    height: 200px;
+    border-radius: 90px;
+    box-shadow: 10px 5px 10px 2px;
+}
+.box-1 img:hover{
+    box-shadow: 0 10px 20px 10px;
+}
+.box-1 h3{
+    margin: 20px 0 0 10px;
+}
+.box-1 p{
+    margin: 20px 0 0 10px;
+}
+
+
+/* ===================================== footer ========================== */
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 60px 0;
+    background-image: url(/Images/footer.jpg);
+    background-size: cover;
+}
+footer h1{
+    color: white;
+}
+footer p{
+    color: white;
+    font-size: 30px;
+}
+.contact{
+    padding: 60px 80px;
+    width: 45%;
+    height: auto;
+}
+.a-part{
+    display: flex;
+}
+.a-part hr{
+    width: 10%;
+    height: 1px;
+    margin: 15px 10px 0 10px;
+    background-color: red;
+}
+.contact h3{
+    color: red;
+    font-size: 30px;
+}
+.contact img{
+    width: 200px;
+    border-radius: 20%;
+}
+
+/* --------------------------- form --------------------------------  */
+.form{
+    border: 3px solid;
+    padding: 40px 60px;
+    width: 450px;
+    height: auto;
+    background-color: #24315e;
+}
+.form input{
+    width:100%;
+    height: 50px;
+    margin: 10px 0 ;
+    border: 3px solid;
+    padding-left: 15px;
+}
+.form .sms{
+    height: 110px;
+}
+
+.button input{
+    margin-top: 50px;
+    margin-left: 10px;
+    background-color: greenyellow;
+}
+.form .social-logo{
+    margin: 20px 0 0 130px;
+}
